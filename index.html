@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+      />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1><span><</span>FS<span>/></span></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#" class="contact_button">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <h3>Hi, i'm Fernando Sirias</h3>
+                <h1>Front-End Developer</h1>
+            </div>
+
+        </header>
+        <div class="fixed_side">
+            <img src="./resources/akar-icons_github-fill.png" alt="Github Logo">
+            <img src="./resources/akar-icons_linkedin-fill.png" alt="LinkedIn Logo">
+            <img src="./resources/mdi_gmail.png" alt="Gmail logo">
+        </div>
+        <div class="about">
+            <div class="about_me">
+                <div class="about_descrip">
+                    <h1 id="about_header">About me</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat sint porro provident eveniet ipsum esse, eius ut. Est voluptates fugiat, rerum iure cupiditate molestias, eaque consequuntur recusandae porro corrupti id!</p>
+                    <h4>Strengths</h4>
+                    <ul>
+                        <li>Learn new things every day</li>
+                        <li>Problem solving skills</li>
+                        <li>I focus on the quality of my job</li>
+                        <li>Excelent team work</li>
+                    </ul>
+                </div>
+                <div class="side_picture">
+                    <img src="./resources/Aboutme.png" alt="About me picture">
+                </div>
+            </div>
+            <div class="skills">
+                <h1>Skills</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./resources/vscode-icons_file-type-html.png" alt="HTML logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./resources/vscode-icons_file-type-css.png" alt="CSS logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./resources/logos_react.png" alt="React logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./resources/logos_javascript.png" alt="Javascript logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./resources/logos_git-icon.png" alt="Git logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./resources/bi_terminal-fill.png" alt="Terminal logo">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+            delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</html>

@@ -1,0 +1,170 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+nav span{
+    display: inline-block;
+}
+
+nav li, span, .logo-blank{
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70em;
+    margin: 15px auto;
+    padding: 0 2em;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 1em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color: #5069EF;
+    color: white;
+}
+
+.contact_button{
+    background-color: #0D32F1;
+}
+
+nav h1 span{
+    color: #324BCE;
+    margin: 0 5px;
+}
+
+nav h1{
+    color: #FDFBFB;
+    font-size: 2.2em;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./resources/banner.png');
+    background-size:cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+.header_text{
+    position: absolute;
+    top: 12em;
+    left: 20%;
+    line-height: 0.5;
+    font-size: 1.6em;
+}
+
+.header_text h3{
+    color: #324BCE;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 100;
+}
+
+.header_text h1{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fixed_side{
+    background: linear-gradient(180deg, rgba(50, 75, 206, 0.9) 0%, rgba(217, 6, 252, 0.92) 100%);
+    display: flex;
+    flex-direction: column;
+    width: 3.5em;
+    height: 14em;
+    justify-content: space-evenly;
+    padding: 0 2px;
+    border-radius: 17px;
+    position: fixed;
+    top: 13em;
+    left:3.2em;
+    align-items: center;
+    margin: 0;
+}
+
+.fixed_side img{
+    width: 2.5em;
+}
+.about{
+    height: 100vh;
+    width: 100%;
+}
+.about_me{
+    display: flex;
+    max-width: 70em;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_descrip{
+    max-width: 50%;
+    margin-right: 50px;   
+}
+
+#about_header{
+  background: -webkit-linear-gradient(250deg, #324DD8 16.09%, rgba(217, 6, 252, 0.81) 95.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.about_descrip p, .about_descrip li{font-size: 1.2em;}
+
+.about_descrip h4{font-size: 1.5em;}
+
+.side_picture img{
+    width: 90%;
+}
+
+.skills{
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.swiper {
+    width: 80%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    margin-bottom: 30px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+    width: 40%;
+  }
