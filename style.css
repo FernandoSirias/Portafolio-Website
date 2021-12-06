@@ -1,7 +1,13 @@
-html,body{
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
     font-family: Roboto, sans-serif;
 }
 
@@ -12,10 +18,6 @@ nav span{
 nav li, span, .logo-blank{
     display: inline-block;
     font-size: 1.1em;
-}
-
-nav li a:hover{
-    transform: scale;
 }
 
 nav{
@@ -41,12 +43,12 @@ nav a{
     background-color: #0D32F1;
 }
 
-nav h1 span{
+.logo span{
     color: #324BCE;
     margin: 0 5px;
 }
 
-nav h1{
+.logo{
     color: #FDFBFB;
     font-size: 2.2em;
     font-family: 'Signika Negative', sans-serif;
@@ -61,12 +63,47 @@ header{
     margin: 0;
 }
 
+.arrow{
+    filter: invert();
+    position: absolute;
+    left: 50%;
+    top: 87vh;
+    animation: arrow_animation 1s ease-in infinite;
+}
+
+@keyframes arrow_animation {
+    0%{
+        top: 87vh;
+    }
+    15%{
+        top: 89vh;
+    }
+    40%{
+        top: 87vh;
+    }
+}
+
 .header_text{
     position: absolute;
     top: 12em;
     left: 20%;
     line-height: 0.5;
     font-size: 1.6em;
+    animation: header_animation 1.5s ease-out;
+}
+
+@keyframes header_animation {
+    0%{
+        opacity: 0%;
+        transform: scale(0.4);
+    }
+    50%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
 }
 
 .header_text h3{
@@ -81,7 +118,7 @@ header{
 }
 
 .fixed_side{
-    background: linear-gradient(180deg, rgba(50, 75, 206, 0.9) 0%, rgba(217, 6, 252, 0.92) 100%);
+    background-image: linear-gradient(to right, #324DD8 0%, #59bbf0  51%, rgba(217, 6, 252, 0.81)  100%);
     display: flex;
     flex-direction: column;
     width: 3.5em;
@@ -94,14 +131,37 @@ header{
     left:3.2em;
     align-items: center;
     margin: 0;
+    transition: 0.4s ease-in-out;
+    background-size: 350% auto;
+    animation: side_animation 1s ease-in-out;
 }
 
-.fixed_side img{
+@keyframes side_animation{
+    0%{
+        opacity: 0;
+        transform: translateX(-90px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+.fixed_side:hover{
+    transform: scale(1.03);
+    background-position: right center;
+}
+
+.fixed_side a img{
     width: 2.5em;
 }
-.about{
+
+#about{
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
 }
 .about_me{
     display: flex;
@@ -110,6 +170,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-basis: 60%;
 }
 
 .about_descrip{
@@ -125,7 +186,8 @@ header{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.3em;
+  margin-top: 0;
 }
 
 .about_descrip p, .about_descrip li{font-size: 1.2em;}
@@ -136,14 +198,43 @@ header{
     width: 90%;
 }
 
-.skills{
-    max-width: 70em;
-    margin: 0 auto;
-    padding: 0 2em;
+#skills{
+    background-color: #2F2E41;
+    height:20em;
+    flex-basis: 40%;
 }
+
+.skills_title{
+    background: linear-gradient(268.5deg, #6373FE 19.18%, rgba(217, 6, 252, 0.81) 93.21%);
+    width: 25%;
+    padding-right: 5%;
+    height: 4.5em;
+    border-radius: 0 20px 20px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.skills_title h2{
+    margin: 0;
+    font-size: 28px;
+}
+
+.swiper-slide{
+    background-color: #2F2E41 !important;
+}
+
+.swiper-pagination{
+    bottom: 0 !important;
+}
+
 .swiper {
-    width: 80%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
 
   .swiper-slide {
@@ -171,5 +262,197 @@ header{
   .swiper-slide img {
     display: block;
     object-fit: cover;
-    width: 40%;
+    width: 50%;
   }
+
+#projects_container{
+    max-width: 100%;
+}
+
+#wave{
+    position: relative;
+    bottom: 0px;
+}
+
+#projects_container h2{
+    margin-left:20%;
+    margin-top: 60px;
+    font-size: 2rem;
+}
+
+#projects_container h3{
+    width: 20%;
+    margin: auto;
+    padding: 40px 0;
+    font-size: 1.7rem;
+    color: rgb(55, 0, 255);
+    text-decoration: underline;
+    
+}
+
+.ds_container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 37px;
+    padding: 20px 0;
+}
+
+.ds_project{
+    flex-basis: 23%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.ds_project:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 20px;
+}
+
+.ds_project img{
+    border-radius: 10px 10px 0 0;
+    flex-basis: 30%;
+    max-width: 20rem;
+    min-height: 12rem;
+}
+
+.ds_description{
+    padding: 0 15px 15px;
+}
+
+.project_tags{
+    padding-left: 10px;
+}
+
+.project_tags li{
+    list-style: none;
+    background-color: #C1E0FF;
+    display: inline-block;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.tags_container{
+    display: flex;
+}
+
+.project_links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project_links a{
+    background-color: #314ee0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: opacity .3s ease-in-out;
+}
+
+.project_links a:hover{
+    opacity: 85%;
+}
+
+#contact{
+    background-color: #009fff;
+}
+
+#contact h3{
+    margin-bottom: 5px;
+}
+
+.contact_form{
+    max-width: 55%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+svg{
+    margin-top: -200px;
+    display: block;
+}
+
+.contact_img_container h2{
+    margin-bottom: 60px;
+    color: white;
+    font-size: 35px;
+}
+
+.form_box{
+    border-radius: 5px;
+    padding: 10px;
+    margin:0;
+    font-size: 18px;
+    border: none;
+}
+
+.small_box{
+    min-width: 80%;
+}
+
+#message_input{
+    width: 98%;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+}
+
+#submit_btn{
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #fff 0%, rgba(255, 124, 1, 0.81)  51%, rgba(252, 125, 6, 0.81)  100%);
+    background-size: 1000% auto;
+    transition: 0.5s ease-in-out;
+}
+
+#submit_btn:hover{
+    background-position: right center;
+    cursor: pointer;
+}
+
+.contact_img_container{
+    display: flex;
+    max-height: 250px;
+    align-items: flex-end;
+}
+
+.contact_img_container img{
+    flex-basis: 50%;
+}
+
+.contact_img_container div{
+    flex-basis: 50%;
+}
+
+footer{
+    background-color: #2F2E41;
+    margin: 0;
+}
+
+.logo_footer{
+    margin: 0;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: #dbd9d9;
+    align-items: center;
+    padding: 0 5%;
+}
