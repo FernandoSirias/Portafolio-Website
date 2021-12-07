@@ -57,7 +57,7 @@ nav a{
 header{
     height: 100vh;
     width: 100%;
-    background-image: url('./resources/banner.png');
+    background-image: url('./images/banner.png');
     background-size:cover;
     overflow: hidden;
     margin: 0;
@@ -157,7 +157,7 @@ header{
 }
 
 #about{
-    height: 100vh;
+    height: 70rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ header{
 }
 
 .about_descrip{
-    width: 40%;
+    width: 60%;
     margin-right: 50px;  
 }
 
@@ -187,15 +187,19 @@ header{
   font-style: normal;
   font-weight: bold;
   font-size: 2.3em;
-  margin-top: 0;
 }
 
-.about_descrip p, .about_descrip li{font-size: 1.2em;}
+.about_descrip p, .about_descrip li{
+    font-size: 1.4em; 
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+}
 
 .about_descrip h4{font-size: 1.5em;}
 
 .side_picture{
-    width: 40%;
+    width: 35%;
 }
 
 .side_picture img{
@@ -229,8 +233,12 @@ header{
 }
 
 @media screen and (max-width: 1024px) {
+    .about_descrip{
+        width: 40%;
+        margin: 20px 0;
+    }
     .side_picture{
-        width: 25%;
+        width: 31%;
     }
 
     .skills_title{
@@ -277,6 +285,7 @@ header{
     display: block;
     object-fit: cover;
     width: 50%;
+    padding: 0px;
   }
 
 #projects_container{
