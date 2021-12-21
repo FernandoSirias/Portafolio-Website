@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome!</title>
+        <title>Fernando Sirias - Data Scientist</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
@@ -23,13 +23,14 @@
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects_container">Projects</a></li>
-                    <li><a href="#contact" class="contact_button">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a download="Fernando Sirias Resume" href="./images/Fernando_Sirias_Resume.pdf" class="resume_button">Download Resume</a></li>
                 </ul>
             </nav>
             <div class="header_text">
-                <h3>Hi, i'm Fernando Sirias</h3>
-                <h1>Data Scientist &</h1>
-                <h1>Front-End Developer</h1>
+                <h3>Making data usefull</h3>
+                <h1>Hi, i'm Fernando Sirias</h1>
+                <h1>Data Scientist & Data Analyst</h1>
             </div>
             <img class='arrow' src="./images/angle-arrow-down_icon-icons.com_73683.svg" alt="arrow">
         </header>
@@ -43,18 +44,16 @@
                 <div class="about_descrip">
                     <h1 id="about_header">ABOUT ME</h1>
                     <hr>
-                    <p>Data scientist & Front-end Developer with a strong attention to detail who
-                        quickly understands and solves complex problems and with a high
-                        quality of work. Holds strong technical knowledge in <strong>programming</strong>.</p>
-                    <p>I apply latest data analysis techniques to provide stakeholders with crucial
-                    strategic information and create <strong>machine learning</strong> model that can
-                    make crucial predictions.</p>
+                    <p>Data scientist & data analyst with a strong attention to detail who quickly understands and solves complex problems and with a high quality of work. Holds strong technical knowledge in <strong>Python</strong>. I apply data science techniques to provide stakeholders with crucial strategic information and create <strong>machine learning</strong> model that can make crucial predictions.
+                        <br>Professional with great analytical skills, good communication, constantly learning and excellent teamwork as well as
+                        independently.<br>
+                        <br><strong>Tools:</strong> Python, SQL, R, Tableau, Spark, Machine Learning, Git, MongoDB.</p>
                     <h4>Strengths:</h4>
                     <ul>
                         <li>Teamwork</li>
                         <li>Fast learning</li>
                         <li>Problem solving</li>
-                        <li>Good communication</li>
+                        <li>Communication</li>
                     </ul>
                 </div>
                 <div class="side_picture">
@@ -70,9 +69,6 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./images/vscode-icons_file-type-css.png" alt="CSS logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/logos_react.png" alt="React logo">
                         </div>
                         <div class="swiper-slide">
                             <img src="./images/logos_javascript.png" alt="Javascript logo">
@@ -101,6 +97,9 @@
                         <div class="swiper-slide">
                             <img src="./images/pandas.svg" style="height: 26%;" alt="Pandas logo">
                         </div>
+                        <div class="swiper-slide" id="spark">
+                            <img src="./images/Apache_Spark_logo.png" style="height: 26%;" alt="Spark logo" >
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -110,67 +109,92 @@
         </div>
         <div id="projects_container">
             <h2>PROJECTS</h2>
-            <h3>Front-End</h3>
             <div class="ds_container">
                 <div class="ds_project">
-                    <img src="./images/jammming.png" alt="">
+                    <img src="./images/diabetes.jpg" alt="">
                     <div class="ds_description">
-                        <h4>Jammming</h4>
-                        <p>React application to create playlists and save them in spotify using the <a href="https://developer.spotify.com/documentation/web-api/">API</a>.</p>
+                        <h4>Capstone Project</h4>
+                        <p>This project uses data from CDC on factors that can contribute to a person having diabetes to create a model that can predict the disease.</p>
                         <div class="tags_container">
                             <p class='tags'>Tags:</p>
                             <ul class="project_tags inline">
-                                <li>React</li>
-                                <li>CSS</li>
-                                <li>Spotify API</li>
+                                <li>ML</li>
+                                <li>Python</li>
+                                <li>EDA</li>
+                                <li>Preprocessing</li>
+                                <li>Automated ML</li>
                             </ul>
                         </div>
                         <div class="project_links">
-                            <a href="https://github.com/FernandoSirias/Jammming" target='_blank'>See Code</a>
-                            <a href="https://fernandosirias.github.io/Jammming/" target='_blank'>See Live</a>
+                            <a target='_blank' href="https://github.com/FernandoSirias/Capstone_Project_Coding_Dojo">See Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="ds_project">
-                    <img src="./images/component.jpg" alt="">
+                    <img src="./images/energy.jpg" alt="">
                     <div class="ds_description">
-                        <h4>Order Summary</h4>
-                        <p>Component to see the order summary card before proceed to payment.</p>
+                        <h4>Household Power Consumption</h4>
+                        <p>Robust dataset with more than 2 millions rows. Create a model to predict household global minute-averaged active power.</p>
                         <div class="tags_container">
                             <p class='tags'>Tags:</p>
                             <ul class="project_tags inline">
+                                <li>Big dataset</li>
+                                <li>Python</li>
+                                <li>Spark</li>
+                                <li>MLlib</li>
+                                <li>Preprocessing</li>
+                            </ul>
+                        </div>
+                        <div class="project_links">
+                            <a target='_blank' href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2464022318939252/3273284089511153/3770310145917142/latest.html">See Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds_project">
+                    <img src="./images/heart_diseases.png" alt="">
+                    <div class="ds_description">
+                        <h4>Heart Diseases Dash</h4>
+                        <p>Dash app that can predict based on the information provided if the person is at risk of heart disease or not.</p>
+                        <div class="tags_container">
+                            <p class='tags'>Tags:</p>
+                            <ul class="project_tags inline">
+                                <li>Python</li>
+                                <li>Plotly</li>
+                                <li>Sklearn</li>
+                                <li>Pandas</li>
+                                <li>Data Viz</li>
+                                <li>CSS</li>
                                 <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Transitions</li>
+                                <li>EDA</li>
+                                <li>Heroku</li>
                             </ul>
                         </div>
                         <div class="project_links">
-                            <a href="https://github.com/FernandoSirias/order_summary" target='_blank'>See Code</a>
-                            <a href="https://fernandosirias.github.io/order_summary/" target='_blank'>See Live</a>
+                            <a target='_blank' href="https://github.com/FernandoSirias/heart_diseases_dash">See Code</a>
+                            <a target='_blank' href="https://heartdiseasesdash.herokuapp.com/">See Live</a>
                         </div>
                     </div>
                 </div>
                 <div class="ds_project">
-                    <img src="./images/preview.jpg" alt="">
+                    <img src="./images/loan2.jpg" alt="">
                     <div class="ds_description">
-                        <h4>Article Preview</h4>
-                        <p>Fully responsive article preview component from <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT">Frontend Mentor</a>.</p>
+                        <h4>Loan Prediction Based on Customer Behavior</h4>
+                        <p>Supervised Learning Model using Spark MLlib and Databricks</p>
                         <div class="tags_container">
                             <p class='tags'>Tags:</p>
                             <ul class="project_tags inline">
-                                <li>Responsive</li>
-                                <li>Javascript</li>
+                                <li>Spark</li>
+                                <li>MLlib</li>
+                                <li>Scaling</li>
+                                <li>Databricks</li>
+                                <li>Random Forest</li>
                             </ul>
                         </div>
                         <div class="project_links">
-                            <a href="https://github.com/FernandoSirias/Article_Preview" target='_blank'>See Code</a>
-                            <a href="https://fernandosirias.github.io/Article_Preview/" target='_blank'>See Live</a>
+                            <a target='_blank' href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2464022318939252/3509588357041356/3770310145917142/latest.html">See Code</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <h3>Data Science</h3>
-            <div class="ds_container">
                 <div class="ds_project">
                     <img src="./images/earthquake.png" alt="">
                     <div class="ds_description">
@@ -190,28 +214,6 @@
                         <div class="project_links">
                             <a target='_blank' href="https://github.com/FernandoSirias/Earthquake_Dash">See Code</a>
                             <a target='_blank' href="https://earthquakedash.herokuapp.com/">See Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="ds_project">
-                    <img src="./images/heart_diseases.png" alt="">
-                    <div class="ds_description">
-                        <h4>Heart Diseases Dash</h4>
-                        <p>Dash app that can predict based on the information provided if the person is at risk of heart disease or not.</p>
-                        <div class="tags_container">
-                            <p class='tags'>Tags:</p>
-                            <ul class="project_tags inline">
-                                <li>Python</li>
-                                <li>Plotly</li>
-                                <li>Sklearn</li>
-                                <li>Pandas</li>
-                                <li>Data Viz</li>
-                                <li>CSS</li>
-                            </ul>
-                        </div>
-                        <div class="project_links">
-                            <a target='_blank' href="https://github.com/FernandoSirias/heart_diseases_dash">See Code</a>
-                            <a target='_blank' href="https://heartdiseasesdash.herokuapp.com/">See Live</a>
                         </div>
                     </div>
                 </div>
@@ -256,7 +258,7 @@
                 <div class="ds_project">
                     <img src="./images/loan.jpg" alt="">
                     <div class="ds_description">
-                        <h4>Lending Club EDA & ML | Kaggle</h4>
+                        <h4>Lending Club EDA & ML</h4>
                         <p>The characteristics of the client are analyzed to predict whether or not they will pay the loan.</p>
                         <div class="tags_container">
                             <p class='tags'>Tags:</p>
@@ -265,7 +267,8 @@
                                 <li>EDA</li>
                                 <li>Data Viz</li>
                                 <li>Pandas</li>
-                                <li>ML</li>
+                                <li>Machine Learning</li>
+                                <li>Cleaning</li>
                             </ul>
                         </div>
                         <div class="project_links">
